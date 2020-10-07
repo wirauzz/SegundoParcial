@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch {
             val bookDao = AppRoomDatabase.getDatabase(applicationContext).bookDato()
             val repository = BookRepository(bookDao)
-            //repository.insert(Book("Alguien","5", "Algo","alguien","desc","https://i.imgur.com/tGbaZCY.jpg"))
+
             val lista = repository.getListBooks()
 
             bookRecyclerView.adapter = bookListAdapter(lista as ArrayList<Book>, applicationContext)

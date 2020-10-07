@@ -4,18 +4,25 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.snackbar.Snackbar
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.row_book.view.*
 
-class bookListAdapter( var list: ArrayList<Book>, applicationContext: Context?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
+class bookListAdapter( var list: ArrayList<Book>, applicationContext: Context?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     class BookListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view =LayoutInflater.from(parent.context).inflate(R.layout.row_book, parent, false)
+        view.setOnClickListener {
+            Snackbar.make(view, view.titleTextView.text, Snackbar.LENGTH_LONG)
+                .setAction("Action", null)
+                .show()
+        }
         return BookListViewHolder(view)
     }
 
