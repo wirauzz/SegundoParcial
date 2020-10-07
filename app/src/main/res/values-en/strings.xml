@@ -9,4 +9,6 @@
     <string name="photoUrlTextView">Image URL</string>
     <string name="cancelText">Cancel</string>
     <string name="addText">Add book</string>
+    <string name="pagesLabel">Pages:</string>
+    <string name="editorialLabel">Editorial:</string>
 </resources>

@@ -40,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="TextView"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,6 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
                 app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
@@ -58,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="@+id/guideline"
                 app:layout_constraintTop_toBottomOf="@+id/AuthorTextView" />
 
@@ -65,7 +68,46 @@
                 android:id="@+id/bookImage"
                 android:layout_width="107dp"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pagesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pagesLabel"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/DescriptionTextView" />
+
+            <TextView
+                android:id="@+id/pagesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/pagesLabel"
+                app:layout_constraintStart_toEndOf="@+id/pagesLabel" />
+
+            <TextView
+                android:id="@+id/editorialLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="@string/editorialLabel"
+                android:textSize="10sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/pagesTextView"
+                app:layout_constraintStart_toEndOf="@+id/pagesTextView" />
+
+            <TextView
+                android:id="@+id/editorialTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="10sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/editorialLabel"
+                app:layout_constraintStart_toEndOf="@+id/editorialLabel" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>

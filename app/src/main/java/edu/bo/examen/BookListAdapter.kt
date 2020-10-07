@@ -30,6 +30,8 @@ class bookListAdapter( var list: ArrayList<Book>, applicationContext: Context?) 
         holder.itemView.DescriptionTextView.text = book.description
         val picasso = Picasso.get()
         picasso.load(book.photoUrl).into(holder.itemView.bookImage)
+        holder.itemView.pagesTextView.text = book.pages
+        holder.itemView.editorialTextView.text = book.editorial
 
     }
 }
