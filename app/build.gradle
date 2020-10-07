@@ -44,5 +44,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
     implementation "com.google.android.material:material:$rootProject.materialVersion"
+    def picassoVersion = "2.71828"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
 
 }

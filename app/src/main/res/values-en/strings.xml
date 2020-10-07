@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">examen</string>
+    <string name="titleBookTextView">Title</string>
+    <string name="pagesTextView">"Number of pages"</string>
+    <string name="editorialTextView">Editorial</string>
+    <string name="authorTextView">Author</string>
+    <string name="descriptionTextView">Description</string>
+    <string name="photoUrlTextView">Image URL</string>
+    <string name="cancelText">Cancel</string>
+    <string name="addText">Add book</string>
+</resources>
