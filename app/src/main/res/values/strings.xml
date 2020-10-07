@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">examen</string>
+    <string name="titleBookTextView">Titulo</string>
+    <string name="pagesTextView">"Cantidad de Paginas "</string>
+    <string name="editorialTextView">Editorial</string>
+    <string name="authorTextView">Autor</string>
+    <string name="descriptionTextView">Descripcion</string>
+    <string name="photoUrlTextView">URL de la foto</string>
+    <string name="cancelText">Cancelar</string>
+    <string name="addText">Agregar</string>
 </resources>

@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
             val bookDao =
                 AppRoomDatabase.getDatabase(applicationContext).bookDato()
             val repository = BookRepository(bookDao)
-            repository.insert(Book("Otro","459", "846","somena","desc","asdasd"))
                 val lista = repository.getListBooks()
 
             bookRecyclerView.adapter = bookListAdapter(lista as ArrayList<Book>, applicationContext)
