@@ -32,7 +32,8 @@ class MainActivity : AppCompatActivity() {
         val addFloatingButon: View = findViewById(R.id.floatingAddButon)
         addFloatingButon.setOnClickListener {
             startActivity(Intent(this, addBookActivity::class.java))
-
         }
+
+
     }
 }

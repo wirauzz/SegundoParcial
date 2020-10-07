@@ -1,12 +1,9 @@
 package edu.bo.examen
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_add_book.*
-import kotlinx.android.synthetic.main.row_book.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -24,5 +21,11 @@ class addBookActivity : AppCompatActivity() {
             }
             startActivity(Intent(this, MainActivity::class.java))
         }
+
+        cancelButton.setOnClickListener{
+            val myIntent = Intent(applicationContext, MainActivity::class.java)
+            startActivityForResult(myIntent, 0)
+        }
+
     }
 }
