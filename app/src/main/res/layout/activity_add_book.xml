@@ -14,7 +14,7 @@
         app:layout_constraintGuide_begin="16dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/titleEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/pagesTextView"
+        android:id="@+id/pagesEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -33,10 +33,10 @@
         android:hint="@string/pagesTextView"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText" />
 
     <EditText
-        android:id="@+id/editorialTextView"
+        android:id="@+id/editorialEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -44,10 +44,10 @@
         android:hint="@string/editorialTextView"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/pagesTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/pagesEditText" />
 
     <EditText
-        android:id="@+id/authorTextView"
+        android:id="@+id/authorEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -55,10 +55,10 @@
         android:hint="@string/authorTextView"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/editorialTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/editorialEditText" />
 
     <EditText
-        android:id="@+id/descriptionTextView"
+        android:id="@+id/descriptionEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -66,10 +66,10 @@
         android:hint="@string/descriptionTextView"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/authorTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/authorEditText" />
 
     <EditText
-        android:id="@+id/UrlImageTextView"
+        android:id="@+id/UrlImageEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -77,7 +77,7 @@
         android:hint="@string/photoUrlTextView"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
 
     <Button
         android:id="@+id/cancelButton"
@@ -90,7 +90,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/UrlImageTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/UrlImageEditText" />
 
     <Button
         android:id="@+id/addButton"

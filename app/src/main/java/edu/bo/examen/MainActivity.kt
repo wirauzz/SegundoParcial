@@ -17,11 +17,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         GlobalScope.launch {
-            val bookDao =
-                AppRoomDatabase.getDatabase(applicationContext).bookDato()
+            val bookDao = AppRoomDatabase.getDatabase(applicationContext).bookDato()
             val repository = BookRepository(bookDao)
             //repository.insert(Book("Alguien","5", "Algo","alguien","desc","https://i.imgur.com/tGbaZCY.jpg"))
-                val lista = repository.getListBooks()
+            val lista = repository.getListBooks()
 
             bookRecyclerView.adapter = bookListAdapter(lista as ArrayList<Book>, applicationContext)
 
@@ -33,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         val addFloatingButon: View = findViewById(R.id.floatingAddButon)
         addFloatingButon.setOnClickListener {
             startActivity(Intent(this, addBookActivity::class.java))
+
         }
     }
 }
